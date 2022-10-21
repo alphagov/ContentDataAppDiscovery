@@ -1,0 +1,151 @@
+INDEX
+{% extends "layout.html" %}
+{% block pageTitle %}
+  Custom date ranges
+{% endblock %}
+{% block beforeContent %}
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: ' <a class="govuk-link" href="#">Send us feedback</a> '
+}) }}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-inset-text">
+      <p> <b>From 20 December 2019 we only have Google Analytics data for users who consent to cookies.</b>
+      <p>The amount of data is severely limited by this so data after this date might not be representative.</p>
+    </div>
+  </div>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third-from-desktop">
+
+      <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Change time period
+            </span>
+          </summary>
+          <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">
+    <b>  From </b>
+    <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+    <legend class="govuk-fieldset__legend">
+    For example 05/05/2021 or 2021
+    </legend>
+    </label>
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+
+    <label class="govuk-label" for="event-name">
+    <b>  To </b>
+    <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+    <legend class="govuk-fieldset__legend">
+    For example 05/05/2021 or 2021
+    </legend>
+    </label>
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+
+    </div>
+
+
+        </details>
+<!--- search for title url ---!>
+  <div class="govuk-form-group">
+  <label class="govuk-label" for="sort">
+    Search for a title or url
+  <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </label>
+</div>
+
+<!--- Document type ---!>
+    <div class="govuk-form-group">
+    <label class="govuk-label" for="sort">
+      Document type
+    </label>
+    <select class="govuk-select" id="sort" name="sort">
+      <option value="published">All document types</option>
+      <option value="updated" selected></option>
+      <option value="views">AAIB Report</option>
+      <option value="comments">About</option>
+      <option value="comments">About our services</option>
+      <option value="comments">Access and opening</option>
+      <option value="comments">Accessible documents policy</option>
+      <option value="comments">Answer</option>
+      <option value="comments">Asylum support decision</option>
+      <option value="comments">Authored article</option>
+    </select>
+  </div>
+  <!--- Document type---!>
+<!--- Organisation---!>
+        <div class="govuk-form-group">
+        <label class="govuk-label" for="sort">
+          Organisation
+        </label>
+        <select class="govuk-select" id="sort" name="sort">
+          <option value="published">All organisations</option>
+          <option value="updated" selected></option>
+          <option value="views">No primary organisation</option>
+          <option value="comments">Academy for Justice Commissioning</option>
+          <option value="comments">Academy for Social Justice</option>
+          <option value="comments">Academy for Social Justice Commissioning</option>
+          <option value="comments">Accelerated Access Review (AAR)</option>
+          <option value="comments">Accelerated Capability Environment (ACE)</option>
+        </select>
+      </div>
+<!--- Organisation---!>
+  <hr>
+<!--- filter button---!>
+  <div class="govuk-button-group">
+  <button class="govuk-button" data-module="govuk-button">
+    Continue
+  </button>
+
+  <a class="govuk-link" href="#">Clear all filters</a>
+</div>
+<hr>
+<!-- p tag is using the body side --!>
+<p class="govuk-body"> <a class="govuk-link" href="#">Download all CSV file</a> </p>
+</div>
+<div class="govuk-grid-column-two-thirds-from-desktop">
+<!-- Table --!>
+<p>
+Showing <b>675,463</b> results for <b>all document types </b> from <b>all organisations</b> </p>
+  <table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header app-custom-class">Document type</th>
+      <th scope="col" class="govuk-table__header app-custom-class">Unique page views</th>
+      <th scope="col" class="govuk-table__header app-custom-class">Users who found this page useful</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a class="govuk-link" href="#">Gov.uk homepage</a></th>
+      <td class="govuk-table__cell">Homepage</td>
+      <td class="govuk-table__cell">653930</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a class="govuk-link" href="#">Sign in to your Universal Credit Account</a></th>
+      <td class="govuk-table__cell">Transaction</td>
+      <td class="govuk-table__cell">43230</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header"><a class="govuk-link" href="#">Check the MOT history of a vehicle</a></th>
+      <td class="govuk-table__cell">Homepage</td>
+      <td class="govuk-table__cell">2530</td>
+    </tr>
+  </tbody>
+  </table>
+</div>
+</div>
+
+
+{% endblock %}
