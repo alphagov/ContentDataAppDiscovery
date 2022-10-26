@@ -27,3 +27,42 @@ background:#f3f2f1
 .image-max-width2 {
   max-width: 100%;
 }
+
+.govuk-table__header{
+  color: #0b0c0c;
+  position: sticky;
+  top: 0;
+  white-space: nowrap;
+  vertical-align: top;
+  padding: 15px;
+  padding-bottom: 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  outline: 1px solid #bfc1c3;
+  background-color: #dee0e2;
+  font-weight: normal;
+}
+
+.govuk-table{
+  font-size: 14px;
+  border: 1px solid grey;
+}
+
+.govuk-table__caption{
+  font-size: 16px;
+}
+
+.govuk-table__row .govuk-table__cell:nth-child(even){
+    background-color: #f8f8f8;
+  }
+
+.govuk-table__row .govuk-table__cell{
+  padding: 10px;
+}
+
+.govuk-select{
+  width: 100%;
+}

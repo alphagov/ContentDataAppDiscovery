@@ -10,14 +10,37 @@
   },
   html: ' <a class="govuk-link" href="#">send us feedback</a>'
 }) }}
+</div>
+<div style="background: #1d70b8;color:white;">
+  <div class="govuk-width-container govuk-!-padding-top-6 govuk-!-padding-bottom-6">
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+  <h1 class="govuk-heading-xl" style="color:white">Help us improve content data app</h1>
+  <p class="govuk-body" style="color:white">
+    Hello, we want to understand how you use Content Data app to make sure it works well for you and we’d love your feedback. You can tell us about your experience of using the app by completing this short questionnaire. It will take about 5 minutes and most questions are multiple choice.
+  </p>
+<div class="govuk-button-group">
+<button class="govuk-button" data-module="govuk-button">
+    View questionnaire
+</button>
+
+<a class="govuk-link" href="#">Hide this</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="govuk-width-container ">
 
 {% endblock %}
 
 {% block content %}
 
+
 <div class="govuk-grid-row">
 
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-full govuk-!-margin-bottom-4">
     <div class="govuk-inset-text">
       <p> <b>From 20 December 2019 we only have Google Analytics data for users who consent to cookies.</b>
       <p>The amount of data is severely limited by this so data after this date might not be representative.</p>
@@ -34,67 +57,58 @@
             </span>
           </summary>
 
-            <div class="govuk-form-group">
-
-      <div class="govuk-radios" data-module="govuk-radios">
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
-          <label class="govuk-label govuk-radios__label" for="contact">
-          <b>  Past 30 days </b>
-          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
-    <legend class="govuk-fieldset__legend">
-      21 September 2022 to 20 October 2022
-    </legend>
-          </label>
-
-
-        </div>
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
-          <label class="govuk-label govuk-radios__label" for="contact">
-          <b> Last month</b>
-          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
-    <legend class="govuk-fieldset__legend">
-    1 September 2022 to 30 September 2022
-    </legend>
-          </label>
-        </div>
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
-          <label class="govuk-label govuk-radios__label" for="contact">
-          <b>  Past 3 months</b>
-          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
-    <legend class="govuk-fieldset__legend">
-      21 July 2022 to 20 October 2022
-    </legend>
-          </label>
-        </div>
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
-          <label class="govuk-label govuk-radios__label" for="contact">
-            <b>Past 6 months</b>
-            <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
-      <legend class="govuk-fieldset__legend">
-        21 April 2022 to 20 October 2022
-      </legend>
-          </label>
-        </div>
-
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
-          <label class="govuk-label govuk-radios__label" for="contact-2">
-            <b>Past year</b>
-            <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
-      <legend class="govuk-fieldset__legend">
-        21 October 2021 to 20 October 2022
-      </legend>
-          </label>
-        </div>
+          <div class="govuk-form-group govuk-!-margin-top-4">
+            <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="time-period-one" name="time-period" type="radio" value="past-30-days" aria-describedby="time-period-item-hint">
+                  <label class="govuk-label govuk-radios__label" for="time-period-one">
+                    Past 30 days
+                  </label>
+                  <div id="time-period-one-item-hint" class="govuk-hint govuk-radios__hint">
+                    21 September 2022 to 20 October 2022
+                  </div>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="time-period-two" name="time-period" type="radio" value="last-month" aria-describedby="time-period-item-hint">
+                    <label class="govuk-label govuk-radios__label" for="time-period-two">
+                      Last month
+                    </label>
+                    <div id="time-period-two-item-hint" class="govuk-hint govuk-radios__hint">
+                      1 September 2022 to 30 September 2022
+                    </div>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="time-period-three" name="time-period" type="radio" value="past-3-months" aria-describedby="time-period-item-hint">
+                    <label class="govuk-label govuk-radios__label" for="time-period-three">
+                      Past 3 months
+                    </label>
+                    <div id="time-period-item-hint" class="govuk-hint govuk-radios__hint">
+                      21 July 2022 to 20 October 2022
+                    </div>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="time-period-four" name="time-period" type="radio" value="past-6-months" aria-describedby="time-period-item-hint">
+                    <label class="govuk-label govuk-radios__label" for="time-period-four">
+                      Past 6 months
+                    </label>
+                    <div id="time-period-item-hint" class="govuk-hint govuk-radios__hint">
+                      21 April 2022 to 20 October 2022
+                    </div>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="time-period-five" name="time-period" type="radio" value="past-year" aria-describedby="time-period-item-hint">
+                    <label class="govuk-label govuk-radios__label" for="time-period-five">
+                      Past year
+                    </label>
+                    <div id="time-period-item-hint" class="govuk-hint govuk-radios__hint">
+                        21 October 2021 to 20 October 2022
+                    </div>
+                </div>
 
         <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
-          <label class="govuk-label govuk-radios__label" for="contact-3">
-            <b>Custom dates</b>
+          <input class="govuk-radios__input" id="time-period-six" name="time-period" type="radio" value="text" data-aria-controls="conditional-contact-3">
+          <label class="govuk-label govuk-radios__label" for="time-period-six">
+            Custom dates
           </label>
         </div>
         <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-3">
@@ -124,7 +138,7 @@ For example 05/05/2021 or 2021
   </div>
 
         </details>
-<!--- search for title url ---!>
+
   <div class="govuk-form-group">
   <label class="govuk-label" for="sort">
     Search for a title or url
@@ -132,7 +146,7 @@ For example 05/05/2021 or 2021
   </label>
 </div>
 
-<!--- Document type ---!>
+
     <div class="govuk-form-group">
     <label class="govuk-label" for="sort">
       Document type
@@ -150,8 +164,7 @@ For example 05/05/2021 or 2021
       <option value="comments">Authored article</option>
     </select>
   </div>
-  <!--- Document type---!>
-<!--- Organisation---!>
+
         <div class="govuk-form-group">
         <label class="govuk-label" for="sort">
           Organisation
@@ -167,24 +180,57 @@ For example 05/05/2021 or 2021
           <option value="comments">Accelerated Capability Environment (ACE)</option>
         </select>
       </div>
-<!--- Organisation---!>
+
   <hr>
-<!--- filter button---!>
+
   <div class="govuk-button-group">
   <button class="govuk-button" data-module="govuk-button">
-    Continue
+    Filter
   </button>
 
   <a class="govuk-link" href="#">Clear all filters</a>
 </div>
 <hr>
-<!-- p tag is using the body side --!>
-<p class="govuk-body"> <a class="govuk-link" href="#">Download all CSV file</a> </p>
+
+<p class="govuk-body-s govuk-!-margin-top-6"> <a class="govuk-link" href="#">Download all CSV file</a> </p>
 </div>
 <div class="govuk-grid-column-two-thirds-from-desktop">
-<!-- Table --!>
-    <img class="image-max-width" src="public/images/table.jpg">
-    <img class="image-max-width2" src="public/images/table2.jpg">
+  <table class="govuk-table">
+    <caption class="govuk-table__caption govuk-table__caption--m">Showing 676,523 results for all document types from all organisations</caption>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">Page title</th>
+        <th scope="col" class="govuk-table__header">Document type</th>
+        <th scope="col" class="govuk-table__header">Unique page views</th>
+        <th scope="col" class="govuk-table__header">Users who found page useful</th>
+        <th scope="col" class="govuk-table__header">Searches from page</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">Sign in to your Universal Credit account</th>
+        <td class="govuk-table__cell">Transaction</td>
+        <td class="govuk-table__cell">8,527,073</td>
+        <td class="govuk-table__cell">65% (6,511 responses)	</td>
+        <td class="govuk-table__cell">2,832</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">GOV.UK homepage</th>
+        <td class="govuk-table__cell">Homepage</td>
+        <td class="govuk-table__cell">6,256,486</td>
+        <td class="govuk-table__cell">53% (11,407 responses)</td>
+        <td class="govuk-table__cell">1,493,096</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">Check the MOT history of a vehicle</th>
+        <td class="govuk-table__cell">Transaction</td>
+        <td class="govuk-table__cell">3,991,154</td>
+        <td class="govuk-table__cell">76% (1,067 responses)	</td>
+        <td class="govuk-table__cell">1,756</td>
+      </tr>
+    </tbody>
+  </table>
+
   </div>
 
 </div>
