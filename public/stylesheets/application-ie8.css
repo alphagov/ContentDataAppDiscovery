@@ -5891,14 +5891,6 @@ x:-moz-any-link {
   background: #f3f2f1;
 }
 
-.image-max-width {
-  max-width: 100%;
-}
-
-.image-max-width2 {
-  max-width: 100%;
-}
-
 .govuk-table__header {
   color: #0b0c0c;
   position: sticky;
@@ -5907,8 +5899,6 @@ x:-moz-any-link {
   vertical-align: top;
   padding: 15px;
   padding-bottom: 10px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.25;
@@ -5938,6 +5928,11 @@ x:-moz-any-link {
   width: 100%;
 }
 
+.govuk-details-radios {
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
 .govuk-header__navigation-list {
   float: right;
 }
@@ -5949,11 +5944,6 @@ x:-moz-any-link {
 
 .govuk-blue-background .govuk-link {
   color: white;
-}
-
-.govuk-details-radios {
-  padding-left: 20px;
-  border-left: 5px solid #bfc1c3;
 }
 
 .govuk-blue-background .govuk-button {

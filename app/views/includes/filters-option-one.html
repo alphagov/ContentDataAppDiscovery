@@ -1,0 +1,139 @@
+<details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Change time period
+      </span>
+    </summary>
+    <div class="govuk-form-group govuk-!-margin-top-4 govuk-details-radios">
+      <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="time-period-one" name="time-period" type="radio" value="past-30-days" aria-describedby="time-period-item-hint">
+            <label class="govuk-label govuk-radios__label" for="time-period-one">
+              Past 30 days
+            </label>
+            <div id="time-period-one-item-hint" class="govuk-hint govuk-radios__hint">
+              21 September 2022 to 20 October 2022
+            </div>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="time-period-two" name="time-period" type="radio" value="last-month" aria-describedby="time-period-item-hint">
+              <label class="govuk-label govuk-radios__label" for="time-period-two">
+                Last month
+              </label>
+              <div id="time-period-two-item-hint" class="govuk-hint govuk-radios__hint">
+                1 September 2022 to 30 September 2022
+              </div>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="time-period-three" name="time-period" type="radio" value="past-3-months" aria-describedby="time-period-item-hint">
+              <label class="govuk-label govuk-radios__label" for="time-period-three">
+                Past 3 months
+              </label>
+              <div id="time-period-item-hint" class="govuk-hint govuk-radios__hint">
+                21 July 2022 to 20 October 2022
+              </div>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="time-period-four" name="time-period" type="radio" value="past-6-months" aria-describedby="time-period-item-hint">
+              <label class="govuk-label govuk-radios__label" for="time-period-four">
+                Past 6 months
+              </label>
+              <div id="time-period-item-hint" class="govuk-hint govuk-radios__hint">
+                21 April 2022 to 20 October 2022
+              </div>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="time-period-five" name="time-period" type="radio" value="past-year" aria-describedby="time-period-item-hint">
+              <label class="govuk-label govuk-radios__label" for="time-period-five">
+                Past year
+              </label>
+              <div id="time-period-item-hint" class="govuk-hint govuk-radios__hint">
+                  21 October 2021 to 20 October 2022
+              </div>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="time-period-six" name="time-period" type="radio" value="text" data-aria-controls="conditional-contact-3">
+            <label class="govuk-label govuk-radios__label" for="time-period-six">
+              Custom dates
+            </label>
+          </div>
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-3">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="event-name">
+                <b>From</b>
+                <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                  <legend class="govuk-fieldset__legend">
+                    For example 05/05/2021 or 2021
+                  </legend>
+                </fieldset>
+              </label>
+              <input class="govuk-input" id="event-name" name="event-name" type="text">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="event-name">
+                <b>  To </b>
+                <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                  <legend class="govuk-fieldset__legend">
+                    For example 05/05/2021 or 2021
+                  </legend>
+                </fieldset>
+              </label>
+              <input class="govuk-input" id="event-name" name="event-name" type="text">
+            </div>
+          </div>
+        </div>
+      </div>
+  </details>
+<div class="govuk-form-group">
+<label class="govuk-label" for="sort">
+Search for a title or url
+<input class="govuk-input" id="event-name" name="event-name" type="text">
+</label>
+</div>
+
+
+<div class="govuk-form-group">
+<label class="govuk-label" for="sort">
+Document type
+</label>
+<select class="govuk-select" id="sort" name="sort">
+<option value="published">All document types</option>
+<option value="updated" selected></option>
+<option value="views">AAIB Report</option>
+<option value="comments">About</option>
+<option value="comments">About our services</option>
+<option value="comments">Access and opening</option>
+<option value="comments">Accessible documents policy</option>
+<option value="comments">Answer</option>
+<option value="comments">Asylum support decision</option>
+<option value="comments">Authored article</option>
+</select>
+</div>
+
+  <div class="govuk-form-group">
+  <label class="govuk-label" for="sort">
+    Organisation
+  </label>
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="published">All organisations</option>
+    <option value="updated" selected></option>
+    <option value="views">No primary organisation</option>
+    <option value="comments">Academy for Justice Commissioning</option>
+    <option value="comments">Academy for Social Justice</option>
+    <option value="comments">Academy for Social Justice Commissioning</option>
+    <option value="comments">Accelerated Access Review (AAR)</option>
+    <option value="comments">Accelerated Capability Environment (ACE)</option>
+  </select>
+</div>
+
+
+<div class="govuk-button-group">
+<button class="govuk-button" data-module="govuk-button">
+Filter
+</button>
+
+<a class="govuk-link" href="#">Clear all filters</a>
+</div>
+<hr>
+
+<p class="govuk-body-s govuk-!-margin-top-6"> <a class="govuk-link" href="#">Download all CSV file</a> </p>

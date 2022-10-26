@@ -17,17 +17,10 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 .govuk-inset-text{
-background:#f3f2f1
+  background:#f3f2f1
 }
 
-.image-max-width {
-  max-width: 100%;
-}
-
-.image-max-width2 {
-  max-width: 100%;
-}
-
+//Table styles
 .govuk-table__header{
   color: #0b0c0c;
   position: sticky;
@@ -36,8 +29,6 @@ background:#f3f2f1
   vertical-align: top;
   padding: 15px;
   padding-bottom: 10px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.25;
@@ -63,14 +54,22 @@ background:#f3f2f1
   padding: 10px;
 }
 
+//Filter styling
 .govuk-select{
   width: 100%;
 }
 
+.govuk-details-radios{
+  padding-left: 20px;
+  border-left: 5px solid #bfc1c3;
+}
+
+//Header styling
 .govuk-header__navigation-list{
   float: right;
 }
 
+//Help us improve content app styling
 .govuk-blue-background{
   background: #1d70b8;
   color:white;
@@ -80,16 +79,12 @@ background:#f3f2f1
   color: white;
 }
 
-.govuk-details-radios{
-  padding-left: 20px;
-border-left: 5px solid #bfc1c3;
-}
-
 .govuk-blue-background .govuk-button{
   background: white;
-  color: #1d70b8		;
+  color: #1d70b8;
   font-weight: bold;
 }
+
 .content-item__link{
   font-weight: bold;
   margin-bottom: 12px;
