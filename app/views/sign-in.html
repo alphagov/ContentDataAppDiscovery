@@ -1,0 +1,39 @@
+{% extends "layout-not-signed-in.html" %}
+{% block pageTitle %}
+  Sign in
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/phase-banner.html" %}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third-from-desktop">
+      <h1 class="govuk-heading-l">Sign in to GOV.UK</h1>
+      {{ govukInput({
+  label: {
+    text: "Email"
+  },
+  id: "event-name",
+  name: "event-name"
+}) }}
+{{ govukInput({
+label: {
+text: "Email"
+},
+id: "event-name",
+name: "event-name"
+}) }}
+{{ govukButton({
+  text: "Sign in",
+  href: "your-applications"
+}) }}
+<p class="govuk-body">
+  <a href="#" class="govuk-link">Forgot your password?</a>
+</p>
+    </div>
+  </div>
+{% endblock %}

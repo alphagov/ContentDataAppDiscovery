@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block pageTitle %}
+  Sign in
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/phase-banner.html" %}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      <h1 class="govuk-heading-l">Your applications</h1>
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      <h2 class="govuk-heading-m"><a href="date-range-option-one">Content data (beta)</a></h2>
+      <p class="govuk-body">
+        Explore data about your content, currently in beta
+      </p>
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+      <h2 class="govuk-heading-m">Support</h2>
+      <p class="govuk-body">
+        Raise support requests
+      </p>
+    </div>
+    <div class="govuk-grid-column-one-third-from-desktop">
+      <hr class="govuk-blue-section-break" />
+      <ul class="govuk-list">
+  <li>
+    <a class="govuk-link" href="#">Change your email or password</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="#">Change your 2-step verification phone</a>
+  </li>
+</ul>
+    </div>
+  </div>
+{% endblock %}
