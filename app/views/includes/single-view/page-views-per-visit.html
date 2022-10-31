@@ -1,0 +1,15 @@
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <h2 class="govuk-heading-l">Page views per visit</h2>
+    <p class="govuk-body-s">
+      Number of times per visit the page was viewed
+    </p>
+    {{ govukDetails({
+      summaryText: "About page views per visit",
+      classes: "govuk-body-s",
+      text: "This figure is calculated by dividing Google Analytics page views by unique page views. It shows on average how many times a page was viewed during a user's session. If a page has a high ratio (above 1.4), this indicates that users have to come back to that page within their session - investigate the navigation from that page further to identify any issues. Source: calculated from Google Analytics"
+    }) }}
+    <h3 class="govuk-heading-m">1.18</h3>
+  </div>
+</div>

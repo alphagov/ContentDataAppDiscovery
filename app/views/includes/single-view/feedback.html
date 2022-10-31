@@ -1,0 +1,23 @@
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <h2 class="govuk-heading-l">Feedback</h2>
+    <h3 class="govuk-heading-m">Number of feedback comments</h3>
+    <p class="govuk-body-s">
+      Number of anonymous user responses to 'Is there anything wrong with this page?'
+    </p>
+    {{ govukDetails({
+      summaryText: "About number of feedback comments",
+      classes: "govuk-body-s",
+      text: "You can use Feedback Explorer ('Feedex') to find out what users are saying about your content. A high rate of feedback could indicate a problem with the content. The data comes from the 'Is there anything wrong with this page?' form and the satisfaction survey at the end of a transaction that started on GOV.UK. You'll need a Signon account with Feedback Explorer permissions to see the comments. Source: Feedback Explorer"
+    }) }}
+    <h3 class="govuk-heading-m">230</h3>
+    <!--Graphic-->
+    {{ govukDetails({
+      summaryText: "Number of feedback comments table",
+      classes: "govuk-body-s",
+      text: "This is the number of internal site searches that were started from the page. When people use internal search, it could be an indication that they haven't found what they're looking for. You'll need access to Google Analytics to see the search terms. Source: Google Analytics"
+    }) }}
+    <p class="govuk-body-s"><a href="#" class="govuk-link" target="_blank">See comments in Feedback Explorer (opens in new tab)</a></p>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <h2 class="govuk-heading-l">Page views</h2>
+    <p class="govuk-body-s">
+      Number of times the page was viewed
+    </p>
+    {{ govukDetails({
+      summaryText: "About page views",
+      classes: "govuk-body-s",
+      text: "This is a count of every time the page was viewed. For example, if someone visits page X, then goes to page Y and then back to page X again, page X will have 2 page views (and 1 unique page view). Source: Google Analytics"
+    }) }}
+    <h3 class="govuk-heading-m">9,623,402</h3>
+    <!--Graphic-->
+    {{ govukDetails({
+      summaryText: "Page views table",
+      classes: "govuk-body-s",
+      text: "This is a count of every time the page was viewed. For example, if someone visits page X, then goes to page Y and then back to page X again, page X will have 2 page views (and 1 unique page view). Source: Google Analytics"
+    }) }}
+  </div>
+</div>

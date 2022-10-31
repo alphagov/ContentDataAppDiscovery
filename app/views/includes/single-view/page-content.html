@@ -1,0 +1,42 @@
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <h2 class="govuk-heading-l">Page content</h2>
+    <p class="govuk-body-s">
+      Percentage of users who answered 'yes' to the 'Is this page useful?' survey
+    </p>
+    {{ govukTable({
+      rows: [
+        [
+          {
+            text: "Reading time"
+          },
+          {
+            text: "0h 1m"
+          }
+        ],
+        [
+          {
+            text: "Word count "
+          },
+          {
+            text: "170"
+          }
+        ],
+        [
+          {
+            text: "Number of PDFs"
+          },
+          {
+            text: "0"
+          }
+        ]
+      ]
+    }) }}
+    {{ govukDetails({
+      summaryText: "About 'users who found page useful'",
+      classes: "govuk-body-s",
+      text: "Percentage of users who answered 'Yes' rather than 'No' to the 'Is this page useful?' survey found on every page of GOV.UK. The more users who responded, the more reliable the score is. For a more reliable score on a page that doesn't have many responses, choose a longer time period. This survey was introduced in February 2018 so there are no responses before this date.Source: calculated from Google Analytics"
+    }) }}
+  </div>
+</div>

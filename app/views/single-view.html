@@ -1,0 +1,22 @@
+{% extends "layout-not-signed-in.html" %}
+{% block pageTitle %}
+  Page name
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/phase-banner.html" %}
+
+{% endblock %}
+
+{% block content %}
+  {% include "includes/ga-notice-banner.html" %}
+  <!--All of the components for the single data view can be found in the includes > single-view folder-->
+  {% include "includes/single-view/header.html" %}
+  {% include "includes/single-view/past-thirty-days.html" %}
+  {% include "includes/single-view/page-views.html" %}
+  {% include "includes/single-view/page-views-per-visit.html" %}
+  {% include "includes/single-view/searches-from-page.html" %}
+  {% include "includes/single-view/feedback.html" %}
+  {% include "includes/single-view/users-who-found-page-useful.html" %}
+  {% include "includes/single-view/page-content.html" %}
+{% endblock %}

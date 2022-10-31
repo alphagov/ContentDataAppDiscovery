@@ -8,3 +8,12 @@ if (window.console && window.console.info) {
 $(document).ready(function () {
   window.GOVUKFrontend.initAll()
 })
+
+const btn = document.getElementById('hide-this');
+
+btn.addEventListener('click', () => {
+  const box = document.getElementById('hide-help-us');
+
+  box.style.display = 'none';
+
+});

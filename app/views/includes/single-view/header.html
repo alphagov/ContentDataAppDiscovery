@@ -1,0 +1,49 @@
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+    <span class="govuk-caption-xl">Page data</span>
+    <h1 class="govuk-heading-xl">Sign in to your Universal Credit account</h1>
+  </div>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+    {{ govukTable({
+      classes: "govuk-body-s",
+      rows: [
+      [
+        {
+          text: "From"
+        },
+        {
+          text: "Government Digital Service"
+        }
+      ],
+      [
+        {
+          text: "Type"
+        },
+        {
+          text: "Transaction"
+        }
+      ],
+      [
+        {
+          text: "URL"
+        },
+        {
+          text: "gov.uk/sign-in-universal-credit"
+        }
+      ]
+    ]
+  }) }}
+  </div>
+  <div class="govuk-grid-column-one-third-from-desktop">
+    <ul class="govuk-list govuk-body-s">
+      <li>
+        <a class="govuk-link" href="#">View on GOV.UK</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Request a content change in GOV.UK Support</a>
+      </li>
+    </ul>
+  </div>
+</div>

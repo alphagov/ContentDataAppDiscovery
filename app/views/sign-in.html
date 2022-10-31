@@ -1,4 +1,10 @@
 {% extends "layout-not-signed-in.html" %}
+{% block header %}
+  {{ govukHeader ({
+    homepageUrl: "/custom-url",
+      serviceName: "Singleon"
+  }) }}
+{% endblock %}
 {% block pageTitle %}
   Sign in
 {% endblock %}

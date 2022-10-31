@@ -1,7 +1,7 @@
 // global styles for <a> and <p> tags
 $govuk-global-styles: true;
 $govuk-new-link-styles: true;
-$govuk-page-width: 1400px;
+$govuk-page-width: 1020px;
 // We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
 $govuk-assets-path: '/govuk/assets/';
 
@@ -20,6 +20,9 @@ $govuk-assets-path: '/govuk/assets/';
   background:#f3f2f1
 }
 
+.govuk-wider-container{
+  max-width: 1600px
+}
 //Table styles
 .govuk-table__header{
   color: #0b0c0c;
@@ -30,7 +33,7 @@ $govuk-assets-path: '/govuk/assets/';
   padding: 15px;
   padding-bottom: 10px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.25;
   outline: 1px solid #bfc1c3;
   background-color: #dee0e2;
@@ -91,5 +94,5 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 .govuk-blue-section-break{
-  border-top:2px solid #005ea5 
+  border-top:2px solid #005ea5
 }
