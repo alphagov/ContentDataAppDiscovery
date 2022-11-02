@@ -3,13 +3,13 @@
   Custom date ranges
 {% endblock %}
 
-{% block beforeContent %}
-  {% include "includes/phase-banner.html" %}
-
+{% block header %}
+  {{ govukHeader ({
+    homepageUrl: "/"
+  }) }}
 {% endblock %}
 
 {% block content %}
-
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds-from-desktop">
       <h1 class="govuk-heading-xl">Content data app prototype</h1>
@@ -20,6 +20,7 @@
       <ul class="govuk-list govuk-list--bullet">
         <li><a href="/date-range-option-one.html">Date range option one</a></li>
         <li><a href="/date-range-option-two.html">Date range option two</a></li>
+        <li><a href="/multi-select-option-one.html">Multi select option one</a></li>
       </ul>
     </div>
   </div>

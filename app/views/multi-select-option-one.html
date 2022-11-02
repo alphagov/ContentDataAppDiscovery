@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Custom date ranges
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/phase-banner.html" %}
+  </div>
+  {% include "includes/help-us-improve-content-data-app.html" %}
+  <div class="govuk-width-container govuk-wider-container">
+{% endblock %}
+
+{% block content %}
+  {% include "includes/ga-notice-banner.html" %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third-from-desktop">
+      {% include "includes/multi-select-filters-option-one.html" %}
+    </div>
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      <div class="facet-tags__group">
+        <div class="facet-tags__wrapper">
+          <span class="facet-tags__preposition">Search term</span>
+          <span class="facet-tag"> <span class="facet-tag__text">Universal Credit account</span> <button type="button" class="facet-tag__remove" aria-label="Remove filter Defence and armed forces" data-module="remove-filter-link" data-track-label="Defence and armed forces" data-facet="level_one_taxon" data-value="e491505c-77ae-45b2-84be-8c94b94f6a2b" data-name="">✕</button> </span>
+
+        </div>
+      </div>
+      <div class="facet-tags__group">
+        <div class="facet-tags__wrapper">
+          <span class="facet-tags__preposition">Document type</span>
+          <span class="facet-tag"> <span class="facet-tag__text">About</span> <button type="button" class="facet-tag__remove" aria-label="Remove filter Defence and armed forces" data-module="remove-filter-link" data-track-label="Defence and armed forces" data-facet="level_one_taxon" data-value="e491505c-77ae-45b2-84be-8c94b94f6a2b" data-name="">✕</button> </span><span class="facet-tags__preposition"> or </span>
+          <span class="facet-tag"> <span class="facet-tag__text">Calendar</span> <button type="button" class="facet-tag__remove" aria-label="Remove filter Defence and armed forces" data-module="remove-filter-link" data-track-label="Defence and armed forces" data-facet="level_one_taxon" data-value="e491505c-77ae-45b2-84be-8c94b94f6a2b" data-name="">✕</button> </span><span class="facet-tags__preposition"> or </span>
+          <span class="facet-tag"> <span class="facet-tag__text">CMA case</span> <button type="button" class="facet-tag__remove" aria-label="Remove filter Defence and armed forces" data-module="remove-filter-link" data-track-label="Defence and armed forces" data-facet="level_one_taxon" data-value="e491505c-77ae-45b2-84be-8c94b94f6a2b" data-name="">✕</button> </span>
+        </div>
+      </div>
+      <div class="facet-tags__group">
+        <div class="facet-tags__wrapper">
+          <span class="facet-tags__preposition">Organisations</span>
+          <span class="facet-tag"> <span class="facet-tag__text">Defence and armed forces</span> <button type="button" class="facet-tag__remove" aria-label="Remove filter Defence and armed forces" data-module="remove-filter-link" data-track-label="Defence and armed forces" data-facet="level_one_taxon" data-value="e491505c-77ae-45b2-84be-8c94b94f6a2b" data-name="">✕</button> </span><span class="facet-tags__preposition"> or </span>
+          <span class="facet-tag"> <span class="facet-tag__text">Companies House</span> <button type="button" class="facet-tag__remove" aria-label="Remove filter Defence and armed forces" data-module="remove-filter-link" data-track-label="Defence and armed forces" data-facet="level_one_taxon" data-value="e491505c-77ae-45b2-84be-8c94b94f6a2b" data-name="">✕</button> </span><span class="facet-tags__preposition"> or </span>
+          <span class="facet-tag"> <span class="facet-tag__text">HMRC</span> <button type="button" class="facet-tag__remove" aria-label="Remove filter Defence and armed forces" data-module="remove-filter-link" data-track-label="Defence and armed forces" data-facet="level_one_taxon" data-value="e491505c-77ae-45b2-84be-8c94b94f6a2b" data-name="">✕</button> </span>
+        </div>
+      </div>
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+      {% include "includes/table.html" %}
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,144 @@
+<details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Change time period
+      </span>
+    </summary>
+    <div class="govuk-form-group govuk-!-margin-top-4 govuk-details-radios">
+      <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="time-period-one" name="time-period" type="radio" value="past-30-days" aria-describedby="time-period-item-hint">
+            <label class="govuk-label govuk-radios__label" for="time-period-one">
+              Past 30 days
+            </label>
+            <div id="time-period-one-item-hint" class="govuk-hint govuk-radios__hint">
+              21 September 2022 to 20 October 2022
+            </div>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="time-period-two" name="time-period" type="radio" value="last-month" aria-describedby="time-period-item-hint">
+              <label class="govuk-label govuk-radios__label" for="time-period-two">
+                Last month
+              </label>
+              <div id="time-period-two-item-hint" class="govuk-hint govuk-radios__hint">
+                1 September 2022 to 30 September 2022
+              </div>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="time-period-three" name="time-period" type="radio" value="past-3-months" aria-describedby="time-period-item-hint">
+              <label class="govuk-label govuk-radios__label" for="time-period-three">
+                Past 3 months
+              </label>
+              <div id="time-period-item-hint" class="govuk-hint govuk-radios__hint">
+                21 July 2022 to 20 October 2022
+              </div>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="time-period-four" name="time-period" type="radio" value="past-6-months" aria-describedby="time-period-item-hint">
+              <label class="govuk-label govuk-radios__label" for="time-period-four">
+                Past 6 months
+              </label>
+              <div id="time-period-item-hint" class="govuk-hint govuk-radios__hint">
+                21 April 2022 to 20 October 2022
+              </div>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="time-period-five" name="time-period" type="radio" value="past-year" aria-describedby="time-period-item-hint">
+              <label class="govuk-label govuk-radios__label" for="time-period-five">
+                Past year
+              </label>
+              <div id="time-period-item-hint" class="govuk-hint govuk-radios__hint">
+                  21 October 2021 to 20 October 2022
+              </div>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="time-period-six" name="time-period" type="radio" value="text" data-aria-controls="conditional-contact-3">
+            <label class="govuk-label govuk-radios__label" for="time-period-six">
+              Custom dates
+            </label>
+          </div>
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-3">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="event-name">
+                <b>From</b>
+                <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                  <legend class="govuk-fieldset__legend">
+                    For example 05/05/2021 or 2021
+                  </legend>
+                </fieldset>
+              </label>
+              <input class="govuk-input" id="event-name" name="event-name" type="text">
+            </div>
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="event-name">
+                <b>  To </b>
+                <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+                  <legend class="govuk-fieldset__legend">
+                    For example 05/05/2021 or 2021
+                  </legend>
+                </fieldset>
+              </label>
+              <input class="govuk-input" id="event-name" name="event-name" type="text">
+            </div>
+          </div>
+        </div>
+      </div>
+</details>
+<div class="govuk-form-group">
+  <label class="govuk-label" for="sort">
+    Search for a title or url
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </label>
+</div>
+{% set types = documentType %}
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset govuk-fieldset-max-height">
+    <legend class="govuk-fieldset__legend">
+        Document type
+    </legend>
+    <div class="govuk-input__wrapper">
+      <div class="govuk-input__prefix" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 50" width="50" height="40"><path d="M25.7 24.8L21.9 21c.7-1 1.1-2.2 1.1-3.5 0-3.6-2.9-6.5-6.5-6.5S10 13.9 10 17.5s2.9 6.5 6.5 6.5c1.6 0 3-.6 4.1-1.5l3.7 3.7 1.4-1.4zM12 17.5c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5z" fill="currentColor"/></svg></div>
+      <input class="govuk-input" id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
+    </div>
+    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+      {% for item in types %}
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="type" name="type" type="checkbox" value="{{item}}">
+        <label class="govuk-label govuk-checkboxes__label" for="type">
+          {{item}}
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+</div>
+{% set organisation = organisation %}
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset govuk-fieldset-max-height">
+    <legend class="govuk-fieldset__legend">
+        Organisation
+    </legend>
+    <div class="govuk-input__wrapper">
+      <div class="govuk-input__prefix" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 50" width="40" height="40"><path d="M25.7 24.8L21.9 21c.7-1 1.1-2.2 1.1-3.5 0-3.6-2.9-6.5-6.5-6.5S10 13.9 10 17.5s2.9 6.5 6.5 6.5c1.6 0 3-.6 4.1-1.5l3.7 3.7 1.4-1.4zM12 17.5c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5z" fill="currentColor"/></svg></div>
+      <input class="govuk-input" id="cost-per-item" name="cost-per-item" type="text" spellcheck="false">
+    </div>
+    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+      {% for each in organisation %}
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="{{each}}">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation">
+          {{each}}
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+</div>
+<div class="govuk-button-group">
+<button class="govuk-button" data-module="govuk-button">
+Filter
+</button>
+<a class="govuk-link" href="#">Clear all filters</a>
+</div>
+<hr>
+<p class="govuk-body-s govuk-!-margin-top-6"> <a class="govuk-link" href="#">Download all CSV file</a></p>
