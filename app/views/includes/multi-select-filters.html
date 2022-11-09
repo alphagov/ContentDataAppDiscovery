@@ -39,8 +39,8 @@
     <div class="govuk-checkboxes govuk-checkboxes--small" id="document-type-list"  data-module="govuk-checkboxes">
       {% for item in types %}
       <div class="govuk-checkboxes__item" id="document-type-name">
-        <input class="govuk-checkboxes__input" id="type" name="type" type="checkbox" value="{{item}}">
-        <label class="govuk-label govuk-checkboxes__label"  for="type">
+        <input class="govuk-checkboxes__input" id="type-{{loop.index}}" name="type" type="checkbox" value="{{item}}">
+        <label class="govuk-label govuk-checkboxes__label"  for="type-{{loop.index}}">
           {{item}}
         </label>
       </div>
@@ -60,9 +60,10 @@
     </div>
     <div class="govuk-checkboxes govuk-checkboxes--small" id="organisation-list" data-module="govuk-checkboxes">
       {% for each in organisation %}
+
       <div class="govuk-checkboxes__item" id="organisation-name">
-        <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="{{each}}">
-        <label class="govuk-label govuk-checkboxes__label" for="organisation">
+        <input class="govuk-checkboxes__input" id="organisation-{{loop.index}}" name="organisation" type="checkbox" value="{{each}}">
+        <label class="govuk-label govuk-checkboxes__label" for="organisation-{{loop.index}}">
           {{each}}
         </label>
       </div>
