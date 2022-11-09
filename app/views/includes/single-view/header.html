@@ -7,7 +7,7 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds-from-desktop">
     {{ govukTable({
-      classes: "govuk-body-s",
+      classes: "govuk-body-s govuk-table-metadata",
       rows: [
       [
         {
@@ -37,13 +37,15 @@
   }) }}
   </div>
   <div class="govuk-grid-column-one-third-from-desktop">
-    <ul class="govuk-list govuk-body-s">
-      <li>
-        <a class="govuk-link" href="#">View on GOV.UK</a>
-      </li>
-      <li>
-        <a class="govuk-link" href="#">Request a content change in GOV.UK Support</a>
-      </li>
-    </ul>
+     <div class="govuk-related-actions">
+       <ul class="govuk-list govuk-body-s">
+         <li>
+           <a class="govuk-link" href="#">View on GOV.UK</a>
+         </li>
+         <li>
+           <a class="govuk-link" href="#">Request a content change in GOV.UK Support</a>
+         </li>
+       </ul>
+     </div>
   </div>
 </div>

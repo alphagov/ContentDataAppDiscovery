@@ -5,34 +5,38 @@
     <p class="govuk-body-s">
       Percentage of users who answered 'yes' to the 'Is this page useful?' survey
     </p>
-    {{ govukTable({
-      rows: [
-        [
-          {
-            text: "Reading time"
-          },
-          {
-            text: "0h 1m"
-          }
-        ],
-        [
-          {
-            text: "Word count "
-          },
-          {
-            text: "170"
-          }
-        ],
-        [
-          {
-            text: "Number of PDFs"
-          },
-          {
-            text: "0"
-          }
-        ]
-      ]
-    }) }}
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        {{ govukSummaryList({
+          rows: [
+            {
+              key: {
+                text: "Reading time"
+              },
+              value: {
+                text: "0h 1m"
+              }
+            },
+            {
+              key: {
+                text: "Word count"
+              },
+              value: {
+                text: "170"
+              }
+            },
+            {
+              key: {
+                text: "Number of PDFs"
+              },
+              value: {
+                html: "0"
+              }
+            }
+          ]
+        }) }}
+      </div>
+    </div>
     {{ govukDetails({
       summaryText: "About 'users who found page useful'",
       classes: "govuk-body-s",
