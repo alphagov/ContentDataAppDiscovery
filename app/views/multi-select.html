@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Custom date ranges
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "includes/phase-banner.html" %}
+  </div>
+  <div class="govuk-width-container govuk-wider-container">
+{% endblock %}
+
+{% block content %}
+  {% include "includes/ga-notice-banner.html" %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third-from-desktop">
+      {% include "includes/multi-select-filters.html" %}
+    </div>
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+      {% include "includes/table.html" %}
+    </div>
+  </div>
+{% endblock %}
