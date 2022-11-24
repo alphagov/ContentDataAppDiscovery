@@ -6227,3 +6227,25 @@ x:-moz-any-link {
     width: 57%;
   }
 }
+.experiment-row {
+  border-bottom: 1px solid #b1b4b6;
+}
+
+.govuk-subnav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.govuk-subnav ul li:nth-child(1) {
+  padding-right: 12px;
+}
+
+.govuk-subnav ul li:not(:nth-child(1)) {
+  padding: 0 12px;
+}
+
+.govuk-subnav {
+  border-bottom: 1px solid #b1b4b6;
+}

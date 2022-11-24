@@ -1,0 +1,51 @@
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-one-half">
+     {{ govukSelect({
+       id: "sort",
+       name: "sort",
+       label: {
+         text: "Sort by"
+       },
+       items: [
+        {
+          value: "published",
+          text: "Document type"
+        },
+        {
+          value: "updated",
+          text: "Unique page views",
+          selected: true
+        },
+        {
+          value: "views",
+          text: "Users who found page useful"
+        },
+        {
+          value: "comments",
+          text: "Searches from page"
+        }
+      ]
+    }) }}
+  </div>
+  <div class="govuk-grid-column-one-half">
+    <p class="govuk-body govuk-!-text-align-right">
+      <a href="#">Comparsion view</a>
+    </p>
+  </div>
+</div>
+{% set results = table %}
+{% for item in results %}
+  <div class="experiment-row">
+    <h3 class="govuk-heading-s govuk-!-margin-top-4 govuk-!-margin-bottom-2"><a class="content-item__link" href="/single-view">{{item.Title}}</a></h3>
+    <p class="govuk-body-s">{{item.url}}</p>
+    <p class="govuk-body-s">
+      Document type is {{item.DocumentType}} with {{item.UniquePageViews | commaSeperated}} unique page views. With {{item.PageUseful}}<span class="satisfaction-column__responses"> ({{ item.yesUseful + item.noUseful }} responses) saying the page is useful with {{item.SearchesFromPage | commaSeperated}} searches from page.
+    </p>
+  </div>
+{% endfor %}
+{{ govukPagination({
+  next: {
+    labelText: "2 of 6,766",
+    href: "#"
+  }
+}) }}

@@ -1,3 +1,4 @@
+<!--An idea to show results in a different way to a table-->
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -17,8 +18,7 @@
       {% include "includes/multi-select-filters.html" %}
     </div>
     <div class="govuk-grid-column-two-thirds-from-desktop">
-      {% include "includes/multi-select-facets.html" %}
-      {% include "includes/table.html" %}
+      {% include "includes/experiment.html" %}
     </div>
   </div>
 {% endblock %}

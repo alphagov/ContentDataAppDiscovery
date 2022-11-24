@@ -1,22 +1,14 @@
 <h2 class="govuk-heading-m">Filters</h2>
-<p class="govuk-body"><a href="#" class="govuk-link">Previous searches</a></p>
-
 <div class="govuk-form-group">
   <label class="govuk-label" for="event-name">
     From
   </label>
-  <div id="event-name-hint" class="govuk-hint">
-  For example 2021 or 05/05/2021
-</div>
+  <div id="event-name-hint" class="govuk-hint">For example 2021 or 05/05/2021</div>
   <input class="govuk-input" id="event-name" name="event-name" type="text">
 </div>
 <div class="govuk-form-group">
-  <label class="govuk-label" for="event-name">
-    To
-  </label>
-  <div id="event-name-hint" class="govuk-hint">
-  For example 2021 or 05/05/2021
-</div>
+  <label class="govuk-label" for="event-name">To</label>
+  <div id="event-name-hint" class="govuk-hint">For example 2021 or 05/05/2021</div>
   <input class="govuk-input" id="event-name" name="event-name" type="text">
 </div>
 
@@ -29,9 +21,7 @@
 {% set types = documentType %}
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset govuk-fieldset-max-height">
-    <legend class="govuk-fieldset__legend">
-        Document type
-    </legend>
+    <legend class="govuk-fieldset__legend">Document type</legend>
     <div class="govuk-input__wrapper">
       <div class="govuk-input__prefix" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 50" width="50" height="40"><path d="M25.7 24.8L21.9 21c.7-1 1.1-2.2 1.1-3.5 0-3.6-2.9-6.5-6.5-6.5S10 13.9 10 17.5s2.9 6.5 6.5 6.5c1.6 0 3-.6 4.1-1.5l3.7 3.7 1.4-1.4zM12 17.5c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5z" fill="currentColor"/></svg></div>
       <input onkeyup="documentType()" class="govuk-input" id="document-type-input" name="document-type-input" type="text" spellcheck="false">
@@ -60,7 +50,6 @@
     </div>
     <div class="govuk-checkboxes govuk-checkboxes--small" id="organisation-list" data-module="govuk-checkboxes">
       {% for each in organisation %}
-
       <div class="govuk-checkboxes__item" id="organisation-name">
         <input class="govuk-checkboxes__input" id="organisation-{{loop.index}}" name="organisation" type="checkbox" value="{{each}}">
         <label class="govuk-label govuk-checkboxes__label" for="organisation-{{loop.index}}">
